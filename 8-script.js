@@ -31,3 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   animatedElements.forEach(el => observer.observe(el));
 });
+
+function showthankyou(){
+  alert("Thank you for your message! We will get back to you soon.");
+}
+document.addEventListener('DOMContentLoaded', function (){
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    showthankyou();
+  });
+})
